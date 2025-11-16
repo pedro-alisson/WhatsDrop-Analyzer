@@ -19,3 +19,22 @@ O objetivo deste projeto é:
 ## 🧪 Evidências principais (IOCs)
 
 ### 🔗 URLs maliciosas identificadas
+
+https://empautlipa.com/
+
+https://empautlipa.com/altor/gera.php
+
+https://coffe-estilo.com/
+
+https://coffe-estilo.com/altor/gera.php
+
+## 🧠 Funcionamento resumido do malware
+- O **VBS inicial** executa silenciosamente o Python.
+- O script Python baixa/consulta comandos em:
+  - `*/altor/gera.php`
+- Carrega um script JS que automatiza o **WhatsApp Web**.
+- Executa remotamente ações como:
+  - envio de mensagens
+  - coleta de dados
+  - execução de instruções assíncronas
+- Comunicação é sempre proxyada atrás da **Cloudflare**.
