@@ -107,7 +107,7 @@ Este repositório documenta observações técnicas feitas antes desta associaç
 
 A imagem abaixo ilustra um exemplo **sanitizado** do vetor inicial de infecção observado durante a análise.
 
-![Exemplo de envio do malware via WhatsApp](exemplo_golpe_do_orçamento.jpg)
+![Exemplo de envio do malware via WhatsApp](images/exemplo_golpe_do_orçamento.jpg)
 
 Neste cenário, a vítima recebe um arquivo compactado (`.zip`) por meio do WhatsApp, acompanhado de uma mensagem com tom urgente e linguagem informal.  
 O nome do arquivo e o conteúdo da mensagem são projetados para parecer legítimos, explorando **engenharia social** e a confiança em contatos conhecidos.
