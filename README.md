@@ -53,6 +53,7 @@ Durante a análise, foram identificados domínios utilizados na comunicação do
 Para evitar acesso acidental ou reutilização indevida, os domínios são apresentados de forma **não clicável**:
 
 empautlipa[.]com
+
 coffe-estilo[.]com
 
 Caminhos observados:
@@ -80,11 +81,38 @@ Este repositório **não contém**:
 - URLs clicáveis ou infraestrutura ativa
 - instruções de execução
 
-Todos os trechos e descrições foram **sanitizados**, mantendo apenas informações necessárias para compreensão da técnica e do comportamento observados.
+
+
+## ⚠️ Nota ética
+
+Este repositório tem finalidade exclusivamente defensiva e informativa.
+Não são disponibilizados payloads funcionais ou códigos completos de malware.
+
 
 ---
 
-## Autor
+## 📰 Contexto público da ameaça
+
+Campanhas com esse padrão de entrega foram posteriormente associadas por pesquisadores, à famílias de malware conhecidas no Brasil, como o *Boto Cor-de-Rosa*, uma evolução do Astaroth.
+
+Essa campanha se destaca pelo uso do **WhatsApp Web como vetor de propagação**, explorando engenharia social e automação para envio de mensagens a contatos da vítima.
+
+
+Este repositório documenta observações técnicas feitas antes desta associação pública, com foco em:
+- fluxo de execução
+- técnicas de ofuscação
+- comunicação remota observada
+
+## 📷 Exemplo de vetor de infecção
+
+A imagem abaixo ilustra um exemplo **sanitizado** do vetor inicial de infecção observado durante a análise.
+
+![Exemplo de envio do malware via WhatsApp](exemplo_golpe_do_orçamento.jpg)
+
+Neste cenário, a vítima recebe um arquivo compactado (`.zip`) por meio do WhatsApp, acompanhado de uma mensagem com tom urgente e linguagem informal.  
+O nome do arquivo e o conteúdo da mensagem são projetados para parecer legítimos, explorando **engenharia social** e a confiança em contatos conhecidos.
+
+Após a extração do arquivo, um script VBScript (`.vbs`) é executado, iniciando a cadeia de execução do malware.
 
 Pedro Alisson  
 GitHub: https://github.com/pedro-alisson
